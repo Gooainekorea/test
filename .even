@@ -1,0 +1,24 @@
+# PostgreSQL 설정 
+POSTGRES_DB=smart_home
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=smart_home_pw  # 실제 운영 환경에서는 더 강력한 비밀번호를 사용하세요.
+
+# Redis 설정
+REDIS_PASSWORD=smart_home_redis_pw
+
+# API Server 설정
+NODE_ENV=development
+PORT=3000
+DB_HOST=smart_home_db
+DB_PORT=5432
+JWT_SECRET=5b6f7d9a4c2e1f0a9b8c7d6e5f4a3b2c1a2b3c4d5e6f7g8h  # 더 복잡하고 긴 시크릿 키를 사용하세요.
+JWT_EXPIRATION=1h
+REDIS_HOST=smart_home_redis
+REDIS_PORT=6379
+REDIS_DB=0
+REDIS_CACHE_TTL=3600
+MQTT_HOST=smart_home_mqtt
+MQTT_PORT=1883
+
+# 볼륨 마운트를 위한 사용자 정보
+USER=$(whoami)
