@@ -12,9 +12,9 @@ echo "데이터베이스 초기화를 시작합니다..."
 # # POSTGRES_USER, 사용자
 # # POSTGRES_PASSWORD 비번
 
-# DB_NAME=${POSTGRES_DB:-smart_home}
-# DB_USER=${POSTGRES_USER:-postgres}
-# DB_PASSWORD=${POSTGRES_PASSWORD:-smart_home_pw} # 비밀번호 
+DB_NAME=${POSTGRES_DB:-smart_home}
+DB_USER=${POSTGRES_USER:-postgres}
+DB_PASSWORD=${POSTGRES_PASSWORD:-smart_home_pw} # 비밀번호 
 # PG_SOCKET_DIR="/var/run/postgresql" # 로컬 소켓으로 자동연결
 
 # # 데이터베이스 연결 대기 (로컬 소켓 우선)
